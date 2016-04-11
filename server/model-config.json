@@ -29,5 +29,9 @@
   "Role": {
     "dataSource": "db",
     "public": false
+  },
+  "OrgModel": {
+    "dataSource": "db",
+    "public": true
   }
 }

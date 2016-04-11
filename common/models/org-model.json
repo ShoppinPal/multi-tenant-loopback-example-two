@@ -1,0 +1,22 @@
+{
+  "name": "OrgModel",
+  "base": "User",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "displayName": {
+      "type": "string",
+      "required": true
+    },
+    "email": false,
+    "username": false,
+    "password": false
+  },
+  "validations": [],
+  "relations": {
+  },
+  "acls": [],
+  "methods": {}
+}
