@@ -1,0 +1,42 @@
+{
+  "initial:before": {
+    "loopback#favicon": {},
+    "loopback#context": {},
+    "loopback#token": {
+      "params": ["state"]
+    },
+    "./middleware/userContext": {}
+  },
+  "initial": {
+    "compression": {},
+    "cors": {
+      "params": {
+        "origin": true,
+        "credentials": true,
+        "maxAge": 86400
+      }
+    }
+  },
+  "session": {},
+  "auth": {},
+  "parse": {},
+  "routes:before": {
+    "./middleware/accessLogger": {
+      "paths": "/api/*"
+    }
+  },
+  "routes": {
+    "loopback#rest": {
+      "paths": [
+        "${restApiRoot}"
+      ]
+    }
+  },
+  "files": {},
+  "final": {
+    "loopback#urlNotFound": {}
+  },
+  "final:after": {
+    "loopback#errorHandler": {}
+  }
+}

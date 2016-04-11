@@ -1,0 +1,7 @@
+{
+  "name": "multi-tenant-loopback-example-two",
+  "description": "A sample which demonstrates how to achieve multi-tenancy in loopback apps - The key difference from other examples: Organization has User as its base model",
+  "repository": "https://github.com/ShoppinPal/multi-tenant-loopback-example-two",
+  "logo": "https://node-js-sample.herokuapp.com/node.png",
+  "keywords": ["node", "loopback", "multi", "tenant", "multi-tenant"]
+}
